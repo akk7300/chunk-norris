@@ -1,15 +1,14 @@
-<?php 
-  
+<?php
+
 namespace Akk7300\ChunkNorris\Tests;
 
 use Akk7300\ChunkNorris\JokeFactory;
-
-use PHPUnit\Framework\TestCase; 
+use PHPUnit\Framework\TestCase;
 
 class JokeFactoryTest extends TestCase
 {
     /**
-     * @test 
+     * @test
      * */
     public function it_returns_a_random_joke()
     {
@@ -22,15 +21,15 @@ class JokeFactoryTest extends TestCase
         $this->assertSame('This is a joke', $joke);
     }
 
-     /**
-     * @test 
+    /**
+     * @test
      * */
     public function it_returns_a_predefined_joke()
     {
         $chunkNorrisJokes = [
             'Chuck Norris\' tears cure cancer. Too bad he has never cried.',
             'Chuck Norris counted to infinity... Twice.',
-            'Chuck Norris has already been to Mars; that\'s why there are no signs of life there'
+            'Chuck Norris has already been to Mars; that\'s why there are no signs of life there',
         ];
 
         $jokes = new JokeFactory();
