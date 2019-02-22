@@ -1,0 +1,26 @@
+{
+    "name": "akk7300/chunk-norris",
+    "description": "test package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "aungkhantkyaw",
+            "email": "aungkhantkyaw@aceplussolutions.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Akk7300\\ChunkNorris\\" : "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Akk7300\\ChunkNorris\\Tests\\" : "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    }
+}
